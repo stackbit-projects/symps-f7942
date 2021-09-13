@@ -1,0 +1,122 @@
+baseURL = ""
+title = "Engimo"
+copyright = ""
+theme = "engimo"
+disqusShortname = ""
+googleAnalytics = ""
+Paginate = 5
+preserveTaxonomyNames = true
+enableRobotsTXT = true
+pygmentsCodefences = true
+enableEmoji = true
+defaultContentLanguage = "en"
+themesDir = "themes"
+publishDir = "public"
+
+[params.info]
+description = "Minimalist Hugo theme for Engineers"
+title404 = "Nothing's here!"
+
+[params.assets]
+favicon = "favicon.ico"
+customCSS = [ "css/custom.css" ]
+customJS = [ "js/custom.js" ]
+gopher = ""
+
+[params.copyright]
+prefix = ""
+holder = "achary"
+startYear = "2017"
+suffix = ""
+
+[params.settings]
+dateFormat = "2006, Jan 02"
+listDateFormat = "2006, Jan 02"
+archiveDateFormat = "Jan 02"
+hideEntryNavigation = [ "page" ]
+hideEntryMeta = [ "page" ]
+showReadingTime = true
+showLastmod = true
+taxonomyCloudShuffle = false
+accentColor = "#44ccff"
+hideMainMenu = false
+rtl = false
+
+[params.sidebar]
+enable = true
+
+[params.widgets]
+header = [ "breadcrumbs" ]
+homepage = [ "recent_posts" ]
+sidebar = [ "about", "search", "sidebar_menu", "taxonomy_cloud" ]
+footer = [ "social_menu" ]
+
+[params.opengraph.facebook]
+admins = [ ]
+appID = ""
+pageID = ""
+
+[params.opengraph.twitter]
+page = ""
+
+[params.seo]
+titleSeparator = "•"
+
+[params.social]
+email = "contact@example.com"
+github = "achary"
+
+[params.comments]
+enable = false
+
+  [params.comments.isso]
+  enable = false
+  scriptSrc = ""
+  dataAttrs = ""
+
+  [params.comments.staticman]
+  enable = true
+  apiEndpoint = "https://api.staticman.net/v2/entry"
+  maxDepth = 2
+  username = "achary"
+  repository = "engimo"
+  branch = "master"
+
+  [params.comments.utterances]
+  enable = false
+  issueTerm = "pathname"
+
+    [params.comments.utterances.github]
+    username = "achary"
+    repository = "engimo"
+
+[params.search]
+client = "fuse"
+
+  [params.search.algolia]
+  appId = ""
+  indexName = ""
+  searchApiKey = ""
+
+[taxonomies]
+author = "authors"
+category = "categories"
+series = "series"
+tag = "tags"
+
+[permalinks]
+page = "/:slug/"
+
+[[menu.main]]
+name = "Repo"
+weight = -10
+identifier = "repository"
+url = "https://github.com/achary/engimo"
+
+[blackfriday]
+hrefTargetBlank = true
+
+[languages.en]
+lang = "en"
+languageName = "English"
+weight = 1
